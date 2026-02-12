@@ -6,6 +6,7 @@
       {
         "id": "c4deba3d1c43c2ba",
         "type": "tabs",
+        "dimension": 67.3374613003096,
         "children": [
           {
             "id": "43cc93ba179441e5",
@@ -19,6 +20,23 @@
               },
               "icon": "lucide-file",
               "title": "Documentation_Index"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1c0752994f1e0fb1",
+        "type": "tabs",
+        "dimension": 32.6625386996904,
+        "children": [
+          {
+            "id": "2756cb42daf82e57",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {},
+              "icon": "dot-network",
+              "title": "Mind Map of Todo List"
             }
           }
         ]
@@ -210,12 +228,32 @@
             "state": {
               "type": "todo",
               "state": {},
+              "icon": "lucide-ghost",
+              "title": "todo"
+            }
+          },
+          {
+            "id": "a3ce6801d6d7d747",
+            "type": "leaf",
+            "state": {
+              "type": "online.larslockefeer.obsidian-plugin-todo",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "online.larslockefeer.obsidian-plugin-todo"
+            }
+          },
+          {
+            "id": "d70589b313a2fbbc",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
               "icon": "checkmark",
               "title": "Todo List"
             }
           },
           {
-            "id": "a3ce6801d6d7d747",
+            "id": "543b74076ece4b0a",
             "type": "leaf",
             "state": {
               "type": "online.larslockefeer.obsidian-plugin-todo",
@@ -225,7 +263,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       }
     ],
     "direction": "horizontal",
@@ -248,7 +286,7 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "e75374f643a5e8b9",
+  "active": "2756cb42daf82e57",
   "lastOpenFiles": [
     "MEAN_STACK/February/Learning-notes",
     "MEAN_STACK/February/Untitled.md",
