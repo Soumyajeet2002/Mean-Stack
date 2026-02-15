@@ -6,7 +6,7 @@
       {
         "id": "c4deba3d1c43c2ba",
         "type": "tabs",
-        "dimension": 75.69659442724458,
+        "dimension": 73.52941176470588,
         "children": [
           {
             "id": "43cc93ba179441e5",
@@ -27,7 +27,7 @@
       {
         "id": "b5e38b23355c7b2d",
         "type": "tabs",
-        "dimension": 24.30340557275542,
+        "dimension": 26.47058823529412,
         "children": [
           {
             "id": "93e730198c7bbee4",
@@ -282,7 +282,8 @@
       "zk-prefixer:Create new unique note": false,
       "markdown-importer:Open format converter": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "card-board:CardBoard": false
     }
   },
   "active": "93e730198c7bbee4",
