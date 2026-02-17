@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===== CSS Reset (Lightweight) ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== HTML & Body Setup ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Images ===== */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== Links ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Lists ===== */
+ul,
+ol {
+  list-style: none;
+}
+
+/* ===== Buttons ===== */
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* ===== Form Elements ===== */
+input,
+textarea,
+select {
+  font: inherit;
+}
