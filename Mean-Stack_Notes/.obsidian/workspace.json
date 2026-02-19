@@ -21,8 +21,23 @@
               "icon": "lucide-file",
               "title": "Documentation_Index"
             }
+          },
+          {
+            "id": "40e2ce08cd740b0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Backend-MERN/Introduction to Backend.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduction to Backend"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "b5e38b23355c7b2d",
@@ -36,7 +51,7 @@
               "type": "mindmap",
               "state": {},
               "icon": "dot-network",
-              "title": "Mind Map of Mind Map of Documentation_Index"
+              "title": "Mind Map of Introduction to Backend"
             }
           }
         ]
@@ -286,10 +301,12 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "89a431cf63373fb7",
+  "active": "40e2ce08cd740b0f",
   "lastOpenFiles": [
-    "MEAN-stack/STACK NOTES/MERN_Project_Setup.md",
+    "Backend-MERN/Introduction to Backend.md",
     "MEAN-stack/STACK NOTES/Documentation_Index.md",
+    "Backend-MERN",
+    "MEAN-stack/STACK NOTES/MERN_Project_Setup.md",
     "MEAN-stack/STACK NOTES/START_HERE.md",
     "MEAN-stack/STACK NOTES/Visual_Guide.md",
     "MEAN-stack/STACK NOTES/Setup_Guide.md",
@@ -301,7 +318,6 @@
     "MEAN_STACK/February/Daily-notes",
     "MEAN_STACK/February",
     "MEAN_STACK",
-    "Untitled.md",
     "Untitled.base",
     "Untitled Kanban.md",
     "2026-02-11.md",
