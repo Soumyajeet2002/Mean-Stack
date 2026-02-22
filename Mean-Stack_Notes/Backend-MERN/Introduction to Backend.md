@@ -148,7 +148,7 @@ export class UsersModule {}
 
 
 
-# 🟢 STEP 7 — Register User (Hash Password)
+## 🟢 STEP 7 — Register User (Hash Password)
 
 In `users.service.ts`:
 
@@ -167,7 +167,7 @@ return this.userRepository.save(user);
 
 
 
-# 🟢 STEP 8 — Login & Generate Token
+## 🟢 STEP 8 — Login & Generate Token
 
 In `auth.service.ts`:
 
@@ -194,7 +194,7 @@ access_token: this.jwtService.sign(payload),
 }
 ```
 
-# 🟢 STEP 9 — Create Login API
+## 🟢 STEP 9 — Create Login API
 
 In `auth.controller.ts`:
 
@@ -203,3 +203,86 @@ In `auth.controller.ts`:
 login(@Body() body: { email: string; password: string }) {   
 return this.authService.login(body.email, body.password); }
 ```
+
+
+# 🧪Testing 
+## STEP 1 — Make Sure Server Is Running
+
+### In your project folder:
+`npm run start:dev`
+- If you see:
+`Nest application successfully started`
+
+## 🚀 STEP 2 — Create (Register) a User First
+
+- Right now login will NOT work unless a user exists in the database.
+- You need a **register endpoint**.
+- If you don’t have one yet, temporarily add this in:
+- `users.controller.ts`
+
+```
+import { Controller, Post, Body } from '@nestjs/common';
+import { UsersService } from './users.service';
+
+@Controller('users')
+export class UsersController {
+  constructor(private usersService: UsersService) {}
+
+  @Post('register')
+  register(@Body() body: { email: string; password: string }) {
+    return this.usersService.create(body.email, body.password);
+  }
+}
+
+```
+Restart server if needed.
+
+## 🧪 STEP 3 — Test Register
+
+In Postman:
+### POST
+- `http://localhost:3000/users/register`
+- 
+Body → JSON:
+`{   "email": "test@gmail.com",   "password": "123456" }`
+
+Expected response:
+```
+{
+  "id": 1,
+  "email": "test@gmail.com",
+  "password": "$2b$10$..."
+}
+```
+
+✅ If password looks encrypted → hashing works.
+You can also check in pgAdmin → user table.
+
+## 🧪 STEP 4 — Test Login
+
+Now test login:
+### POST
+`http://localhost:3000/auth/login
+`
+- Body → JSON:
+`{   "email": "test@gmail.com",   "password": "123456" }`
+
+- Expected response:
+`{   "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." }`
+🎉 That long string is your JWT token.
+
+## 🧪 STEP 5 — Test Wrong Password
+- Try:
+`{   "email": "test@gmail.com",   "password": "wrong" }`
+
+- Expected:
+`401 Unauthorized`
+If that happens → your authentication is secure.
+
+
+
+
+# What is DTO::
+## DTO
+- DTO stands for `Data Transfer Object`
+- It is a simple object used to transfer data between layers of an application ( for example , between the controller and services , or between the backend and frontend).
