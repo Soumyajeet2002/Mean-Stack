@@ -286,3 +286,4 @@ If that happens → your authentication is secure.
 ## DTO
 - DTO stands for `Data Transfer Object`
 - It is a simple object used to transfer data between layers of an application ( for example , between the controller and services , or between the backend and frontend).
+- 
